@@ -51,11 +51,52 @@ function runDetection() {
         }
     });
 }
+let plant = document.getElementById("plant");
+let wateringCan = document.getElementById("can");
 
 function showNeeds() {
-    document.getElementsByClassName("plant").style.display = none;
-    document.getElementsByClassName("can").style.display = inline;
+    if (plant) {
+        let displayPlant = plant.style.display;
+        if (displayPlant == "inline") {
+            plant.style.display = "none";
+        } else {
+            plant.style.display = "inline"
+        }
+        requestAnimationFrame(runDetection);
+    };
+    if (wateringCan) {
+        let displayCan = can.style.display;
+        if (displayCan == "none") {
+            can.style.display = "inline";
+        } else {
+            can.style.display = "inline"
+        }
+        requestAnimationFrame(runDetection);
+    };
+    
 }
+
+/* function showNeeds() {
+    let plant = document.getElementsByClassName("plant");
+    let wateringCan = document.getElementsByClassName("can");
+    if (plant) {
+        let displayPlant = plant.style.display;
+        if (displayPlant == "inline") {
+            plant.style.display = "none";
+        } else {
+            plant.style.display = "inline"
+        }
+    };
+    if (wateringCan) {
+        let displayCan = can.style.display;
+        if (displayCan == "none") {
+            can.style.display = "inline";
+        } else {
+            can.style.display = "inline"
+        }
+    }
+    
+}*/
 
 // Load the model.
 handTrack.load(modelParams).then(lmodel => {

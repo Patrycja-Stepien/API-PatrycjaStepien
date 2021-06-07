@@ -38,10 +38,13 @@ body {
 .videobox {
     display: none;
 }
-.plant {
+
+#plant {
 width: 20%;
+display: inline;
 }
-.can {
+
+#can {
     width: 10%;
     display: none;
 }
