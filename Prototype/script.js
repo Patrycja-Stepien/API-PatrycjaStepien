@@ -39,8 +39,6 @@ function toggleVideo() {
     }
 }
 
-
-
 function runDetection() {
     model.detect(video).then(predictions => {
         console.log("Predictions: ", predictions);
@@ -48,7 +46,15 @@ function runDetection() {
         if (isVideo) {
             requestAnimationFrame(runDetection);
         }
+        if (predictions.length >= 1) {
+            showNeeds();
+        }
     });
+}
+
+function showNeeds() {
+    document.getElementsByClassName("plant").style.display = none;
+    document.getElementsByClassName("can").style.display = inline;
 }
 
 // Load the model.
