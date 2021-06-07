@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--title, styling links and meta info-->
 <head>
-
   <meta charset="UTF-8">
   <title>Example 1</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
+<!--upper section-->
 <body class="bx--body p20">
    <div class="p20">
+     <!--description-->
     Wave to check what the plant needs.
   </div>
   <div class="mb10">
     <button onclick="toggleVideo()" id="trackbutton" class="bx--btn bx--btn--secondary" type="button">
       Toggle Video
+      <!--toggle button-->
     </button>
     <div id="updatenote" class="updatenote mt10"> loading model ..</div>
   </div>
+  <!--input image-->
   <img class="plant" src="plant 5.jpeg">
   <img class="can" src="can.jpg">
   <video class="videobox canvasbox" autoplay="autoplay" id="myvideo"></video>
-
+<!--handtracking canvas-->
   <canvas id="canvas" class="border canvasbox"></canvas>
-
+<!--script links-->
   <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"> </script>
   <script src="script.js"></script>
