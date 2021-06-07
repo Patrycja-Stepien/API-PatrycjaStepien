@@ -36,7 +36,7 @@ body {
 }
 
 .videobox {
-    display: inline;
+    display:none;
 }
 .plant {
 width: 15%;
