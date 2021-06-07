@@ -1,5 +1,6 @@
 body {
     padding: 20px;
+    background-color: cadetblue;
 }
 
 .p20 {
@@ -30,4 +31,8 @@ body {
     background: rgb(245, 147, 20);
     color: white;
     display: inline;
+}
+
+.videobox {
+    visibility: hidden;
 }
