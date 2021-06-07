@@ -1,0 +1,2 @@
+This is example 1 of handtrack.js code which I used to make a prototype. It's based on Voctor Dibia's code: https://codepen.io/victordibia/pen/RdWbEY
+To open, use Live Server option on index.html file.
