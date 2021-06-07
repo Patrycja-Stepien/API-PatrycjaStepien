@@ -41,3 +41,7 @@ body {
 .plant {
 width: 20%;
 }
+.can {
+    width: 10%;
+    display: none;
+}
