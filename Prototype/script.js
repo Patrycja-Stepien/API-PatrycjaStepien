@@ -48,7 +48,9 @@ function runDetection() {
         }
         if (predictions.length >= 1) {
             showNeeds();
+            
         }
+        requestAnimationFrame(runDetection);
     });
 }
 let plant = document.getElementById("plant");
@@ -62,16 +64,16 @@ function showNeeds() {
         } else {
             plant.style.display = "inline"
         }
-        requestAnimationFrame(runDetection);
+        
     };
     if (wateringCan) {
         let displayCan = can.style.display;
         if (displayCan == "none") {
             can.style.display = "inline";
         } else {
-            can.style.display = "inline"
+            can.style.display = "none"
         }
-        requestAnimationFrame(runDetection);
+        
     };
     
 }
